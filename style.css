@@ -1,0 +1,394 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #8c52ff;
+}
+
+.container {
+  font-size: 16px;
+  background-color: #ffffff;
+  width: 90vw;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em;
+  border-radius: 0.6em;
+  box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+}
+
+#options-container {
+  text-align: center;
+   
+}
+
+#options-container div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em 0 2.4em 0;
+}
+
+#options-container button {
+  padding: 0.6em 1.2em;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 0.3em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+#options-container button:disabled {
+  border: 3px solid #808080;
+  color: #808080;
+  background-color: #efefef;
+}
+
+#options-container button.active {
+  background-color: #8c52ff;
+  border: 3px solid #000000;
+  color: #fff;
+}
+
+.letter-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+#letter-container button {
+  height: 2.4em;
+  width: 2.4em;
+  border-radius: 0.3em;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.new-game-popup {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.6em;
+}
+
+#user-input-section {
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  margin: 0.6em 0 1.2em 0;
+}
+
+#canvas {
+  display: flex;
+  margin: auto;
+  border: 10px solid #8c52ff;
+  border-radius: 10px;
+  padding-right: 50px;
+  justify-content: center;
+
+}
+
+.hide {
+  display: none;
+}
+
+#result-text h2 {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+#result-text p {
+  font-size: 1.25em;
+  margin: 1em 0 2em 0;
+}
+
+#result-text span {
+  font-weight: 600;
+}
+
+#new-game-button {
+  font-size: 1.25em;
+  padding: 0.5em 1em;
+  background-color: #8c52ff;
+  border: 3px solid #000000;
+  color: #fff;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+
+.win-msg {
+  color: #39d78d;
+}
+
+.lose-msg {
+  color: #fe5152;
+}
+
+/* 0 comments on commit 201ab24
+Please sign in to comment.
+Footer
+© 2024 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs */
+
+@media screen and (max-width:480px) {
+  * {
+    position: relative;
+    padding: 0px;
+    margin: 0;
+    top: 2px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+  position: relative;
+  width: 100vw;
+  top: 5px;
+
+  height: 100vh;
+}
+.container {
+  height: 95vh;
+  font-size: 16px;
+  background-color: #ffffff;
+  width: 90vw;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em;
+  border-radius: 0.6em;
+}
+.letter-container {
+  /* position: relative; */
+  top: -82px;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+}
+#options-container {
+  text-align: center;
+  height: 225px;
+}
+#options-container div {
+  position: relative;
+  top: 10px;
+  /* font-size: 13px; */
+  width: 100%;
+  /* left: -28px; */
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em 1.5rem 1.4em 0;
+}
+#canvas {
+  display: flex;
+  margin: auto;
+  border: 10px solid #8c52ff;
+  border-radius: 10px;
+  top: 50px;
+  height: 24vh;
+  width: 28vh;
+  padding-right: 0px;
+  justify-content: center;
+  position: relative;
+  left: -19px;
+}
+#user-input-section {
+  top: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  margin: 0.6em 0 1.2em 0;
+}
+
+
+
+}
+
+
+
+
+@media screen and (max-width:380px) {
+  * {
+    position: relative;
+    padding: 0px;
+    margin: 0;
+    top: 2px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+  position: relative;
+  width: 100vw;
+  top: 5px;
+
+  height: 100vh;
+}
+.container {
+  height: 95vh;
+  font-size: 16px;
+  background-color: #ffffff;
+  width: 90vw;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em;
+  border-radius: 0.6em;
+}
+.letter-container {
+  /* position: relative; */
+  top: -82px;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+}
+#options-container {
+  text-align: center;
+  height: 225px;
+}
+#options-container div {
+  position: relative;
+  top: 10px;
+  /* font-size: 13px; */
+  width: 100%;
+  /* left: -28px; */
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em 1.5rem 1.4em 0;
+}
+#canvas {
+  display: flex;
+  margin: auto;
+  border: 10px solid #8c52ff;
+  border-radius: 10px;
+  top: 40px;
+  height: 21vh;
+  width: 37vh;
+  padding-right: 0px;
+  justify-content: center;
+  position: relative;
+  left: -19px;
+}
+#user-input-section {
+  top: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  margin: 0.6em 0 1.2em 0;
+}
+
+
+
+}
+
+
+@media screen and (max-width:350px) {
+  * {
+    position: relative;
+    padding: 0px;
+    margin: 0;
+    top: 2px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+  position: relative;
+  width: 100vw;
+  top: 5px;
+
+  height: 100vh;
+}
+.container {
+  height: 95vh;
+  font-size: 16px;
+  background-color: #ffffff;
+  width: 90vw;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em;
+  border-radius: 0.6em;
+}
+.letter-container {
+  /* position: relative; */
+  top: -82px;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+}
+#options-container {
+  text-align: center;
+  height: 225px;
+}
+#options-container div {
+  position: relative;
+  top: 10px;
+  font-size: 13px;
+  width: 100%;
+  left: -28px;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em 1.5rem 1.4em 0;
+}
+#canvas {
+  display: flex;
+  margin: auto;
+  border: 10px solid #8c52ff;
+  border-radius: 10px;
+  top: 50px;
+  height: 24vh;
+  width: 28vh;
+  padding-right: 0px;
+  justify-content: center;
+  position: relative;
+  left: -19px;
+}
+#user-input-section {
+  top: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  margin: 0.6em 0 1.2em 0;
+}
+
+
+
+}
